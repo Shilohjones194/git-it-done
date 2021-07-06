@@ -18,10 +18,41 @@ const promptUser = () => {
             name: 'title',
         },
         {
+            type: 'input',
+            message: 'Describe your project:',
+            name: 'description'
+        },
+        {
+            type: 'input',
+            message: 'How did you install your project?',
+            name: 'installation',
+        },
+        {
+            type: 'input',
+            message: 'How do you use your project?',
+            name: 'usage',
+        },
+///STill not 100% on how to do the license/badge part//
+        {
             name: 'license',
             type: 'list',
             message: 'Choose your license:',
             choices: ['', '', ''],
+        },
+        {
+            type: 'input',
+            message: 'Add all of the contributors.',
+            name: 'contributors',
+        },
+        {
+            type: 'input',
+            message: 'What kind of tests do you run on your project?',
+            name: 'tests',
+        },
+        {
+            type: 'input',
+            message: 'What is your GitHub user name?',
+            name: 'github'
         },
         {
             type: 'input',
